@@ -14,7 +14,7 @@ describe('Search', () => {
         
         expect( search.state('value') ).toEqual([]);
     
-        console.log(search)
+        // console.log(search)
 
     });
 });
