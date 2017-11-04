@@ -9,12 +9,47 @@ describe('Search', () => {
       expect( search.state('value') ).toEqual([]);
     });
 
-    it('should change the value to the input when button is clicked', () => {
+    it('should change the value to the input is changed', () => {
         const search = shallow(<Search />);
+        const input = search.find('input');
         
-        expect( search.state('value') ).toEqual([]);
-    
-        // console.log(search)
+        const mockEvent = {
+            target: {
+              value: 'Portland'
+            }
+          }
+      
 
+
+        expect( search.state('value')[0] ).toEqual();
+
+        input.simulate('change', mockEvent);
+
+        expect( search.state('value') ).toEqual('Portland');
     });
+
+    it('should make suggestions based on the input', () =>{
+        const search = shallow(<Search />);
+        const input = search.find('input');
+
+        expect( search.find('li').length ).toEqual(0);
+
+        const mockEvent = {
+            target: {
+              value: 'Portland'
+            }
+          }
+          input.simulate('change', mockEvent);
+
+          expect( search.find('li').length ).toEqual(2);
+
+        })
+
+        it('should make suggestions based on the input', () =>{
+          const search = mount(<Search />);
+          console.log(search)
+  
+          })
+
+
 });
