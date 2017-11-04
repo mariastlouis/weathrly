@@ -30,7 +30,6 @@ describe('Card', () => {
 
   it('Card should exist', () => {
     expect(card).toBeDefined()
-    console.log(card.debug());
   })
 
    it('Should should render passed-in time', () => {
@@ -44,7 +43,6 @@ describe('Card', () => {
 
   })
 
- 
   it('Should render a passed-in temp', () => {
     expect( card.find('.temp').length ).toEqual(1);
     expect('56°F').toEqual(fillerData.temp);
