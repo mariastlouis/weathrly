@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import Search from '../lib/Search'
 
-describe('Card', () => {
+describe('Search', () => {
     it('should start with an value array in state with nothing in it', () => {
       const search = shallow(<Search />);
   
@@ -14,7 +14,7 @@ describe('Card', () => {
         
         expect( search.state('value') ).toEqual([]);
     
-        console.log(search)
+        // console.log(search)
 
     });
 });
