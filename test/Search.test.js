@@ -20,6 +20,7 @@ describe('Search', () => {
           }
       
 
+
         expect( search.state('value')[0] ).toEqual();
 
         input.simulate('change', mockEvent);

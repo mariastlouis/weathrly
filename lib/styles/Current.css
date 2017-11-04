@@ -48,3 +48,6 @@ h1, h2, p {
 .accent-color {
   color: orange;
 }
+.summary {
+  text-align: center;
+}
