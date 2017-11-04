@@ -31,6 +31,8 @@ describe('Search', () => {
         const search = shallow(<Search />);
         const input = search.find('input');
 
+        expect( search.find('li').length ).toEqual(0);
+
         const mockEvent = {
             target: {
               value: 'Portland'
@@ -38,6 +40,15 @@ describe('Search', () => {
           }
           input.simulate('change', mockEvent);
 
-          expect( search.updateInputValue.suggestions ).toEqual([ 'portland, or', 'portland, me' ]);
-    })
+          expect( search.find('li').length ).toEqual(2);
+
+        })
+
+        it('should make suggestions based on the input', () =>{
+          const search = mount(<Search />);
+          console.log(search)
+  
+          })
+
+
 });
