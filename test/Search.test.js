@@ -6,13 +6,13 @@ describe('Search', () => {
     it('should render the input field', () => {
       const search = shallow(<Search />);
       const input = search.find('input');
-      expect(input.nodes.length).toEqual(1);
+      expect(input.length).toEqual(1);
     })
 
     it('should render a button', () =>{
       const search = shallow(<Search />);
       const button = search.find('button');
-      expect(button.nodes.length).toEqual(1);
+      expect(button.length).toEqual(1);
     })
 
     it('should start with an value array in state with nothing in it', () => {
