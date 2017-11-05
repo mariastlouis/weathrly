@@ -1,0 +1,10 @@
+.suggestions-list{
+    position: fixed;
+    list-style-type: none;
+    padding: 0;
+}
+
+.suggestions-list li:hover{
+    background-color: lightblue;
+    
+}
