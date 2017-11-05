@@ -51,3 +51,8 @@ h1, h2, p {
 .summary {
   text-align: center;
 }
+
+.current-icon {
+  color: blue;
+  font-size: 45px;
+}
