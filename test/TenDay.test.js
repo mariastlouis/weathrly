@@ -27,18 +27,12 @@ it('should render 10 cards', () => {
  it('each card should have a time component', () => {
     wrapper = mount( <TenDay ten = {mockData.tenDay} />)
    expect(wrapper.find('.time').length).toEqual(10);
-
-
   });
 
   it('each card should have a temperature component', () => {
     wrapper = mount( <TenDay ten = {mockData.tenDay} />)
    expect(wrapper.find('.temp').length).toEqual(10);
-
-
   });
-
-
 
 
 });

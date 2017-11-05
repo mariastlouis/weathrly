@@ -47,7 +47,7 @@ describe('Search', () => {
 
         it('should make suggestions based on the input', () =>{
           const search = mount(<Search />);
-          // console.log(search)
+          console.log(search)
   
           })
 
