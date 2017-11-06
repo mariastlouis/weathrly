@@ -15,14 +15,30 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 70%;
   /*justify-content: center;*/
 }
 
-.ten-weekday .card .time {
-  width: 80px;
+.ten-weekday .card td.card-temp,
+.ten-weekday .card td.card-condition,
+.ten-weekday .card td.card-img,
+.ten-weekday .card td.card-time
+ {
+ width: 100px;
 }
 
-.ten-weekday .card .card-icon {
-  margin-right: 10px;
+.ten-weekday .card td.card-img {
+ color: #04D6D4;
 }
+
+.ten-weekday .table {
+  background: blue;
+}
+
+
+table.ten-day-table tr:nth-child(even) {
+  background-color: blue;
+}
+/*.ten-weekday table tr:nth-child(even)
+ {background: #CCC}
+.ten-weekday table tr:nth-child(odd)
+ {background: #FFF}*/

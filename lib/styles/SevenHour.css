@@ -14,6 +14,25 @@
   color: #4D4A48;
 }
 
+.seven-hour .card tr td {
+  display: flex;
+  flex-direction: column;
+}
+
+.seven-hour .card td.card-temp,
+.seven-hour .card td.card-condition,
+.seven-hour .card td.card-img,
+.seven-hour .card td.card-time
+ {
+  display: flex;
+  align-items: center;
+}
+
+.seven-hour .card td.card-time {
+  color: #4D4A48;
+  font-weight: bold; 
+}
+
 .seven-hed {
     padding-left: 20px;
     padding-top: 10px;
