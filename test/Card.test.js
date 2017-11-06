@@ -33,23 +33,23 @@ describe('Card', () => {
   })
 
    it('Should should render passed-in time', () => {
-    expect( card.find('.time').length ).toEqual(1);
+    expect( card.find('.card-time').length ).toEqual(1);
     expect('7:00 AM').toEqual(fillerData.time);
   })
 
  it('Should should render passed-in condition', () => {
-    expect( card.find('.cond').length ).toEqual(1);
-   expect( card.find('.cond').text() ).toEqual('Partly Cloudy');
+    expect( card.find('.card-condition').length ).toEqual(1);
+   expect( card.find('.card-condition').text() ).toEqual(' Partly Cloudy');
 
   })
 
   it('Should render a passed-in temp', () => {
-    expect( card.find('.temp').length ).toEqual(1);
+    expect( card.find('.card-temp').length ).toEqual(1);
     expect('56°F').toEqual(fillerData.temp);
   })
 
   it('Should be able to render a high and low', () => {
-    expect( card.find('.temp').length ).toEqual(1);      
+    expect( card.find('.card-temp').length ).toEqual(1);      
     expect("65°F").toEqual(fillerData.high);
     expect("32°F").toEqual(fillerData.low);
   })

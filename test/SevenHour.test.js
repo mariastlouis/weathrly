@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import SevenHour from '../lib/SevenHour';
-import testData from '../lib/testData.js';
+import testData from './testData.js';
 import cleanData from '../lib/cleanData.js'
 
 let mockData = cleanData(testData)
