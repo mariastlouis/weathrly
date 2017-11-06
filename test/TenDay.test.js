@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import TenDay from '../lib/TenDay';
-import testData from '../lib/testData.js';
+import testData from './testData.js';
 import cleanData from '../lib/cleanData.js'
 
 let mockData = cleanData(testData)
@@ -25,12 +25,13 @@ it('should render 10 cards', () => {
 
  it('each card should have a time component', () => {
     wrapper = mount( <TenDay ten = {mockData.tenDay} />)
-   expect(wrapper.find('.time').length).toEqual(10);
+   expect(wrapper.find('.card-time').length).toEqual(10);
+
   });
 
   it('each card should have a temperature component', () => {
     wrapper = mount( <TenDay ten = {mockData.tenDay} />)
-   expect(wrapper.find('.temp').length).toEqual(10);
+   expect(wrapper.find('.card-temp').length).toEqual(10);
   });
 
 
