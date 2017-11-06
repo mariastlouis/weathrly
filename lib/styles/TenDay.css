@@ -1,5 +1,28 @@
 .ten-weekday {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 10px;
+  align-items: center;
+}
+
+.ten-hed {
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #4D4A48;
+}
+
+.ten-weekday .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  /*justify-content: center;*/
+}
+
+.ten-weekday .card .time {
+  width: 80px;
+}
+
+.ten-weekday .card .card-icon {
+  margin-right: 10px;
 }

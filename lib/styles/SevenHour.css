@@ -2,4 +2,27 @@
   display: flex;
   flex-direction: row;
   margin: 10px;
+  justify-content: center;
+}
+
+.seven-hour .card {
+  justify-content: space-between;
+  min-width: 80px;
+  margin: 10px 0 0 0;
+  padding: 0 5px 10px 5px;
+  border-right: 0.5px solid #676767;
+  color: #4D4A48;
+}
+
+.seven-hed {
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #4D4A48;
+}
+
+.seven-hour .card-icon {
+  color: #04D6D4;
+  font-size: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
