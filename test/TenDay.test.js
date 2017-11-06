@@ -11,7 +11,6 @@ describe('TenDay', () => {
 
 it('should exist', () => {
   wrapper = shallow( <TenDay ten = {mockData.tenDay} />)
-  console.log(wrapper.debug())
 });
 
 it('should have all of its elements inside a class of ten-day', () =>{
