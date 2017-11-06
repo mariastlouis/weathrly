@@ -1,10 +1,35 @@
+
+.search-input {
+  background: #FF6347;
+  padding: 15px;
+}
+
 .suggestions-list{
     position: fixed;
     list-style-type: none;
     padding: 0;
+    color: white;
+    
 }
 
 .suggestions-list li:hover{
-    background-color: lightblue;
+    background-color: white;
+    color: #4D4A48;
     
 }
+
+input[type="text"] {
+    width: 200px;
+    padding: 10px 18px;
+    font-size: 16px;
+    color: #B8B8B8;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    margin-left: -80px;
+    background: #4D4A48;
+    color: #04D6D4;
+    border: none;
+    }

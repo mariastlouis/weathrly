@@ -27,10 +27,6 @@ h1, h2, p {
 
 }
 
-/*.city {
-  margin-top: 20px;
-}
-*/
 .search {
   display: flex;
   flex-direction: row;
