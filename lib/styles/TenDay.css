@@ -1,5 +1,44 @@
 .ten-weekday {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 10px;
+  align-items: center;
 }
+
+.ten-hed {
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #4D4A48;
+}
+
+.ten-weekday .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*justify-content: center;*/
+}
+
+.ten-weekday .card td.card-temp,
+.ten-weekday .card td.card-condition,
+.ten-weekday .card td.card-img,
+.ten-weekday .card td.card-time
+ {
+ width: 100px;
+}
+
+.ten-weekday .card td.card-img {
+ color: #04D6D4;
+}
+
+.ten-weekday .table {
+  background: blue;
+}
+
+
+table.ten-day-table tr:nth-child(even) {
+  background-color: blue;
+}
+/*.ten-weekday table tr:nth-child(even)
+ {background: #CCC}
+.ten-weekday table tr:nth-child(odd)
+ {background: #FFF}*/

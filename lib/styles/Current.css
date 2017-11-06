@@ -1,19 +1,32 @@
+
+body {
+   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+
 h1, h2, p {
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
   }
  
 
+ h1 {
+  
+  color: #04D6D4;
+ }
+
 
 .current {
   display: flex;
   flex-direction: column;
+  background: #FF6347;
+  color: #EDE6E5;
 
 }
 
-.city {
-  margin-top: 20px;
-}
 
 .search {
   display: flex;
@@ -26,33 +39,37 @@ h1, h2, p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
+  margin-bottom: 10px;
 }
 
-.current-temp {
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-}
-.big-temp {
-  font-size: 50px;
-}
 
-.bottom-info {
+.date-city {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 10px 30px;
+  margin: 15px 30px 5px 30px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
 
 }
 
-.accent-color {
-  color: orange;
+.summary-high-low {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 30px;
+}
+
+.dark-gray {
+  color: #4D4A48;
 }
 .summary {
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .current-icon {
-  color: blue;
-  font-size: 45px;
+  color: #EDE6E5;
+  font-size: 95px;
 }
