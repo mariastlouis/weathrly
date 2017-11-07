@@ -73,7 +73,7 @@ describe('Card', () => {
   img: 'http://icons.wxug.com/i/c/k/clear.gif'
 }
 
- it('it should not render in a high and low if there is no temp ', () => {
+ it('it should render in a high and low if there is no temp ', () => {
  card = shallow(<Card 
   cond = {moreMockData.cond}
       high={moreMockData.high}
