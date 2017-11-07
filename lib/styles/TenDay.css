@@ -1,3 +1,8 @@
+.ten-day {
+  border-left: #04D6D4 solid 15px;
+  color: #4D4A48;
+}
+
 .ten-weekday {
   display: flex;
   flex-direction: column;
@@ -11,10 +16,16 @@
     color: #4D4A48;
 }
 
+.ten-hed h2 {
+  font-size: 45px;
+}
+
 .ten-weekday .card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
   /*justify-content: center;*/
 }
 
@@ -23,22 +34,12 @@
 .ten-weekday .card td.card-img,
 .ten-weekday .card td.card-time
  {
- width: 100px;
+ width: 290px;
 }
 
 .ten-weekday .card td.card-img {
  color: #04D6D4;
 }
 
-.ten-weekday .table {
-  background: blue;
-}
 
 
-table.ten-day-table tr:nth-child(even) {
-  background-color: blue;
-}
-/*.ten-weekday table tr:nth-child(even)
- {background: #CCC}
-.ten-weekday table tr:nth-child(odd)
- {background: #FFF}*/
