@@ -51,7 +51,19 @@ describe('App', () => {
     expect(wrapper.find('TenDay')).toBeDefined();
     expect(wrapper.find('TenDay').length).toEqual(1)
   
-  })
+  });
+
+  it('should render the error page if there was an error fetching the data', ()=>{
+    const wrapper = shallow(<App />);
+    wrapper.setState({error: true})
+
+    expect(wrapper.find('.error-message')).toBeDefined();
+    expect(wrapper.find('.error-message').length).toEqual(1)
+
+    expect(wrapper.find('Current').length).toEqual(0)
+    expect(wrapper.find('SevenHour').length).toEqual(0)
+    expect(wrapper.find('TenDay').length).toEqual(0)
+  });
 
 
 })
