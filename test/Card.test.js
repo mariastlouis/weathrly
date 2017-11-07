@@ -6,8 +6,8 @@ const fillerData = {
   time: '7:00 AM',
   cond: 'Partly Cloudy',
   temp: '56°F',
-  high: '65°F',
-  low: '32°F',
+  high: '65',
+  low: '32',
   img: 'http://icons.wxug.com/i/c/k/clear.gif'
 }
 
@@ -50,13 +50,21 @@ describe('Card', () => {
 
   it('Should be able to render a high and low', () => {
     expect( card.find('.card-temp').length ).toEqual(1);      
-    expect("65°F").toEqual(fillerData.high);
-    expect("32°F").toEqual(fillerData.low);
+    expect("65").toEqual(fillerData.high);
+    expect("32").toEqual(fillerData.low);
   })
 
   it('should render an image displaying the current weather', () => {
     expect(card.find('.card-img')).toBeDefined();
   });
+
+  it('it should render the temp if passed in and not the high and low', () => {
+  console.log(card.debug())
+   expect(card.find('.card-temp').length).toEqual(1);
+   expect( card.find('.card-temp').text() ).toEqual((fillerData.temp));
+
+
+  })
 
 
 })
