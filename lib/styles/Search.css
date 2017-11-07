@@ -1,18 +1,26 @@
 
-.search-input {
-  background: #FF6347;
-  padding: 10px;
+.search {
+    padding: 10px;
   display: flex;
-  /* justify-content: center; */
   background-color: #4E4C48;
   margin: 0;
+  justify-content: space-between;
 }
 
-.search-input h3{
+.logo {
+  width: 40px;
+  margin-right: 15px;
+  margin-top: 2px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-hed h3{
     color: white;
     font-size: 45px;
-    margin: 0 0 0 60%;
-    padding: 0;
 }
 
 .search-input input{
@@ -25,7 +33,7 @@
     padding: 0;
     color: white;
     background-color: rgba(59, 59, 59, 0.9);
-    margin-top: 40px;
+    margin-top: 10px;
     
 }
 
@@ -43,7 +51,7 @@
 
 input[type="text"] {
     width: 350px;
-    max-height: 40px;
+    height: 40px;
     font-size: 16px;
     color: #B8B8B8;
     border: none;
@@ -54,12 +62,12 @@ input:focus {
 }
 
 button {
-    max-height: 42px;
+    height: 42px;
     font-size: 16px;
     background: #04D6D4;
     color: white;
     border: #04D6D4 solid 2px;
-    margin-top: 5px;
+    /*margin-top: 5px;*/
 }
 
 button:hover {
@@ -68,3 +76,21 @@ button:hover {
   border: 2px solid #039E9B ;
 }
 
+@media screen and (max-width: 800px) {
+.logo-hed h3{
+    display: none;
+}
+}
+
+@media screen and (max-width: 650px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    input[type="text"] {
+        width: 85%;
+    }
+   
+}
