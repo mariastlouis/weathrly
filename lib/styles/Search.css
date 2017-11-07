@@ -1,7 +1,6 @@
 
 .search {
-  background: #FF6347;
-  padding: 10px;
+    padding: 10px;
   display: flex;
   background-color: #4E4C48;
   margin: 0;
@@ -34,7 +33,7 @@
     padding: 0;
     color: white;
     background-color: rgba(59, 59, 59, 0.9);
-    margin-top: 40px;
+    margin-top: 10px;
     
 }
 
@@ -77,4 +76,21 @@ button:hover {
   border: 2px solid #039E9B ;
 }
 
+@media screen and (max-width: 800px) {
+.logo-hed h3{
+    display: none;
+}
+}
 
+@media screen and (max-width: 650px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    input[type="text"] {
+        width: 85%;
+    }
+   
+}

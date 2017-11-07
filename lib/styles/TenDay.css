@@ -41,5 +41,25 @@
  color: #04D6D4;
 }
 
+@media screen and (max-width: 950px) { 
+  .ten-day-table table td{
+    font-size: 25px;
+  }
+}
 
+@media screen and (max-width: 550px) { 
+  .ten-day-table table td{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) { 
+  .ten-day-table table td{
+    font-size: 18px;
+  }
+
+  .ten-day{
+    border-left: none;
+  }
+}
 
