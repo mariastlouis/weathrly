@@ -58,16 +58,36 @@ describe('Card', () => {
     expect(card.find('.card-img')).toBeDefined();
   });
 
-  it('it should render the temp if passed in and not the high and low', () => {
-  console.log(card.debug())
-   expect(card.find('.card-temp').length).toEqual(1);
-   expect( card.find('.card-temp').text() ).toEqual((fillerData.temp));
+ 
 
+})
+
+describe('Card', () => {
+  let card;
+
+  const moreMockData = {
+  time: '7:00 AM',
+  cond: 'Partly Cloudy',
+  high: '65',
+  low: '32',
+  img: 'http://icons.wxug.com/i/c/k/clear.gif'
+}
+
+ it('it should not render in a high and low if there is no temp ', () => {
+ card = shallow(<Card 
+  cond = {moreMockData.cond}
+      high={moreMockData.high}
+      low={moreMockData.low}
+      time={moreMockData.time}
+      img={moreMockData.img}
+
+  />);
+
+ expect( card.find('.card-temp').text() ).toEqual('65/32');
 
   })
 
-
-})
+});
 
 
 
