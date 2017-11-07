@@ -3,11 +3,16 @@
   flex-direction: row;
   margin: 10px;
   justify-content: center;
+  
+}
+.seven-hed h2{
+  font-size: 45px;
+  
 }
 
 .seven-hour .card {
   justify-content: space-between;
-  min-width: 80px;
+  min-width: 13%;
   margin: 10px 0 0 0;
   padding: 0 5px 10px 5px;
   border-right: 0.5px solid #676767;
@@ -44,4 +49,8 @@
   font-size: 30px;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.seven-wrapper{
+  border-left: #AEBC1B solid 15px;
 }

@@ -4,7 +4,7 @@ body {
 }
 
 p {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 h1, h2, p {
@@ -23,7 +23,7 @@ h1, h2, p {
   display: flex;
   flex-direction: column;
   background: #FF6347;
-  color: #EDE6E5;
+  color: white;
 
 }
 
@@ -68,8 +68,22 @@ h1, h2, p {
   text-align: center;
   padding-bottom: 10px;
 }
+.city{
+  margin-top: 100px;
+}
+
+.date{
+  margin-top: 100px;
+}
 
 .current-icon {
-  color: #EDE6E5;
-  font-size: 95px;
+  color: white;
+  font-size: 150px;
+  padding-top: 10px;
+}
+
+
+.current-temp h1{
+  font-size: 100px;
+  color: white;
 }
