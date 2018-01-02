@@ -9,6 +9,9 @@ Technologies used:
 * Fetch
 * Jest/Enzyme testing
 
+![alt text](https://github.com/mariastlouis/weathrly/blob/master/lib/weatherly_demo.gif)
+
+
 
 To use: 
 
