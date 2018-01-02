@@ -1,6 +1,12 @@
-# React Starter Kit
+# Weathrly
 
-To install the dependencies:
+Welcome
+
+Technologies used: 
+*React 
+* Weather Undground API
+* Fetch
+* Jest/Enzyme
 
 ```
 npm install
