@@ -1,6 +1,6 @@
 # Weathrly
 
-Welcome
+Welcome to Weathrly - a fun and easy way to check the weather wherever you are. 
 
 Technologies used: 
 *React 
