@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+}
+
+.error-page{
+    background-color: #4E4C48;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.error-message {
+    background-color: #FF6347;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.error-text{
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 100px;
+}
+
+.error-text2{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+}
+

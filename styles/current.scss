@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300')
+
+$headline-font: 'Open Sans Condensed', sans-serif;
+
+$paragraph-font: 'Open Sans Condensed', sans-serif;
+
+$dark-gray: #4D4A48;
+
+$background-color: #FF6347;
+
+$accent-color: #04D6D4;
+
+$icon-color: #EDE6E5;
+
+$secondary-accent: #AEBC1B;
+
+
+h1, h2, p {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+  }
+ 
+
+ h1 {
+  font-family: $headline-font;
+  color: $accent-color;
+ }
+
+
+.current {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.city {
+  margin-top: 20px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.condition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.current-temp {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.big-temp {
+  font-size: 50px;
+}
+
+.bottom-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 30px;
+
+}
+
+.accent-color {
+  color: orange;
+}
+.summary {
+  text-align: center;
+}
+
+.current-icon {
+  color: blue;
+  font-size: 45px;
+}

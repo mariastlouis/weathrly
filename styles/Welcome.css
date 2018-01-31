@@ -1,0 +1,22 @@
+
+.welcome-div {
+  background-color: #FF6347;
+  height: 1000px;
+}
+
+.welcome-hed, .welcome-text, .big-logo {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-hed h1 {
+  color: white;
+  font-size: 95px;
+}
+
+
+.welcome-text h2 {
+  font-size: 45px;
+}
+

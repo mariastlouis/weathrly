@@ -1,0 +1,22 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+  }
+
+  td{
+    font-size: 35px;
+  }
+
+  @media screen and (max-width: 1400px) {
+    td{
+      font-size: 25px;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    td{
+      font-size: 35px;
+    }
+  }

@@ -1,0 +1,101 @@
+
+.search {
+    padding: 10px;
+  display: flex;
+  background-color: #4E4C48;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 15px;
+  margin-top: 2px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-hed h3{
+    color: white;
+    font-size: 45px;
+}
+
+.search-input input{
+    margin-top: 5px;
+}
+
+.suggestions-list{
+    position: fixed;
+    list-style-type: none;
+    padding: 0;
+    color: white;
+    background-color: rgba(59, 59, 59, 0.9);
+    margin-top: 10px;
+    
+}
+
+.suggestions-list li {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 330px;
+}
+
+.suggestions-list li:hover{
+    background-color: white;
+    color: #4D4A48;
+    
+}
+
+input[type="text"] {
+    width: 350px;
+    height: 40px;
+    font-size: 16px;
+    color: #B8B8B8;
+    border: none;
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+button {
+    height: 42px;
+    font-size: 16px;
+    background: #04D6D4;
+    color: white;
+    border: #04D6D4 solid 2px;
+    /*margin-top: 5px;*/
+}
+
+button:hover {
+  color: white;
+  background: #039E9B;
+  border: 2px solid #039E9B ;
+}
+
+@media screen and (max-width: 800px) {
+.logo-hed h3{
+    display: none;
+}
+}
+
+@media screen and (max-width: 650px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .search-input{
+        width: 100%;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+   button{
+       width: 100%;
+   }
+}

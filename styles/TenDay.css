@@ -1,0 +1,65 @@
+.ten-day {
+  border-left: #04D6D4 solid 15px;
+  color: #4D4A48;
+}
+
+.ten-weekday {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+}
+
+.ten-hed {
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #4D4A48;
+}
+
+.ten-hed h2 {
+  font-size: 45px;
+}
+
+.ten-weekday .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+  /*justify-content: center;*/
+}
+
+.ten-weekday .card td.card-temp,
+.ten-weekday .card td.card-condition,
+.ten-weekday .card td.card-img,
+.ten-weekday .card td.card-time
+ {
+ width: 290px;
+}
+
+.ten-weekday .card td.card-img {
+ color: #04D6D4;
+}
+
+@media screen and (max-width: 950px) { 
+  .ten-day-table table td{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 550px) { 
+  .ten-day-table table td{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) { 
+  .ten-day-table table td{
+    font-size: 18px;
+  }
+
+  .ten-day{
+    border-left: none;
+  }
+}
+
