@@ -1,11 +1,12 @@
 {
+  "homepage": "https://jdursema.github.io/weathrly",
   "name": "react-starter-kit",
   "version": "1.0.0",
   "description": "A good enough starter kit for a React project, I guess.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack.js",
+    "build": "webpack",
     "eslint": "./node_modules/eslint/bin/eslint.js ./lib/*.js",
     "test": "jest"
   },
@@ -24,7 +25,6 @@
   "bugs": {
     "url": "https://github.com/turingschool-examples/react-starter-kit/issues"
   },
-  "homepage": "https://github.com/turingschool-examples/react-starter-kit",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.24.1",
@@ -44,6 +44,7 @@
     "eslint-plugin-jsx-a11y": "^1.2.2",
     "eslint-plugin-react": "^5.1.1",
     "file-loader": "^0.11.2",
+    "gh-pages": "^1.1.0",
     "jest": "^20.0.4",
     "mocha": "^2.4.5",
     "mocha-loader": "^0.7.1",
